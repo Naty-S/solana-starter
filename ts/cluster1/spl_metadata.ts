@@ -72,7 +72,7 @@ umi.use(signerIdentity(createSignerFromKeypair(umi, keypair)));
 
         let update = updateMetadataAccountV2(umi, { 
             ...accounts,
-            data: { ...metadata, uri: "https://raw.githubusercontent.com/Naty-S/Turbin3_Q3_25_Builders/main/static/CH/metadata.json"}
+            data: { ...metadata, symbol: "CHIBI", uri: "https://raw.githubusercontent.com/Naty-S/Turbin3_Q3_25_Builders/main/static/CH/metadata.json"}
         });
 
         let result = await update.sendAndConfirm(umi);
